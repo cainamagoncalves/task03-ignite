@@ -1,1 +1,60 @@
-// TODO
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  > button {
+    background: transparent;
+    color: var(--pink-point);
+    border: 0;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.containerContent {
+  max-width: 700px;
+  
+  a {
+    text-decoration: none;
+    display: block;
+
+    & + a {
+      margin-top: 2.5rem;
+    }
+
+    h1 {
+      color: var(--text-title);
+    }
+
+    p {
+      margin: 0.5rem 0 0 0;
+      color: var(--text-body)
+    }
+
+    div {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1.5rem;;
+
+      time, span {
+        color: var(--text-body);
+      }
+
+      span {
+        margin-left: 1rem;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    
+      svg:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+}
